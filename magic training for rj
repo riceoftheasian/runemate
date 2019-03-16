@@ -1,0 +1,353 @@
+{
+  "Variables": [
+    {
+      "name": "Zombie",
+      "value": "Zombie",
+      "type": "NPC"
+    },
+    {
+      "name": "Attack",
+      "value": "Attack",
+      "type": "ACTION"
+    },
+    {
+      "name": "Soul rune",
+      "value": "Soul rune",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Yew longbow",
+      "value": "Yew longbow",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "713",
+      "value": "713",
+      "type": "NUMBER"
+    },
+    {
+      "name": "73",
+      "value": "73",
+      "type": "NUMBER"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "b50c2837-b185-4a4c-bc32-d320394b843b",
+        "position": {
+          "x": "-283.0",
+          "y": "19.0"
+        },
+        "flowTasks": {
+          "success": "e9f29254-56d1-45d7-948b-3666d8fb6424"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "OSRS",
+        "IntervalLow": 346.55517400855376,
+        "IntervalHigh": 1014.0282922881239
+      }
+    },
+    {
+      "name": "NpcCondition",
+      "base": {
+        "id": "e9f29254-56d1-45d7-948b-3666d8fb6424",
+        "position": {
+          "x": "-36.0",
+          "y": "360.0"
+        },
+        "flowTasks": {
+          "success": "5aad6093-b9a8-4810-96c4-12e838e72d36"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Attack"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Zombie"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Attack"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "644f6d60-521f-48b4-b553-809ad6220a1d",
+        "position": {
+          "x": "794.0",
+          "y": "153.0"
+        },
+        "flowTasks": {
+          "success": "bc25b34a-98ce-4b12-94a2-9a6891abfe42"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Soul rune"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "SpecialInteractionAction",
+      "base": {
+        "id": "2bc27c12-50d7-4708-bc6d-e5d2587c6f95",
+        "position": {
+          "x": "1747.0",
+          "y": "-12.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Zombie"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Standard"
+        ],
+        "CompRegex": false,
+        "Condition": "Cast magic on",
+        "Type": "NPC",
+        "ClickRegex": false,
+        "spellName": "Vulnerability"
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "5aad6093-b9a8-4810-96c4-12e838e72d36",
+        "position": {
+          "x": "375.0",
+          "y": "387.0"
+        },
+        "flowTasks": {
+          "success": "644f6d60-521f-48b4-b553-809ad6220a1d",
+          "failure": "97a4ec1c-ca4b-45df-8c63-19a62e47e9ff"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "713"
+        ],
+        "ValueRegex": false,
+        "Condition": "Animation id equals:"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "97a4ec1c-ca4b-45df-8c63-19a62e47e9ff",
+        "position": {
+          "x": "763.0",
+          "y": "603.0"
+        },
+        "flowTasks": {
+          "success": "6d9e044d-24dc-4ab3-a25c-94a8a3ea1663"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Yew longbow"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "SpecialInteractionAction",
+      "base": {
+        "id": "6d9e044d-24dc-4ab3-a25c-94a8a3ea1663",
+        "position": {
+          "x": "1302.0",
+          "y": "696.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Yew longbow"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Standard"
+        ],
+        "CompRegex": false,
+        "Condition": "Cast magic on",
+        "Type": "Inventory item",
+        "ClickRegex": false,
+        "spellName": "High level alchemy"
+      }
+    },
+    {
+      "name": "SkillCondition",
+      "base": {
+        "id": "bc25b34a-98ce-4b12-94a2-9a6891abfe42",
+        "position": {
+          "x": "1234.0",
+          "y": "98.0"
+        },
+        "flowTasks": {
+          "success": "2bc27c12-50d7-4708-bc6d-e5d2587c6f95",
+          "failure": "1dec38cb-d4f1-44fb-9fc2-6f8b8dff7130"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "73",
+        "Condition": "Less than (\u003c)",
+        "Type": "Magic"
+      }
+    },
+    {
+      "name": "SpecialInteractionAction",
+      "base": {
+        "id": "1dec38cb-d4f1-44fb-9fc2-6f8b8dff7130",
+        "position": {
+          "x": "1724.0",
+          "y": "411.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Zombie"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Standard"
+        ],
+        "CompRegex": true,
+        "Condition": "Cast magic on",
+        "Type": "NPC",
+        "ClickRegex": false,
+        "spellName": "Enfeeble"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "position": {
+          "x": "-266.0",
+          "y": "274.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": ""
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "position": {
+          "x": "-348.0",
+          "y": "279.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": ""
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "position": {
+          "x": "-448.0",
+          "y": "358.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": ""
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "MLP_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}
