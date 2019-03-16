@@ -29,19 +29,24 @@
       "name": "73",
       "value": "73",
       "type": "NUMBER"
+    },
+    {
+      "name": "Nature rune",
+      "value": "Nature rune",
+      "type": "SPRITE_ITEM"
     }
   ],
   "NodeCollection": [
     {
       "name": "StartCondition",
       "base": {
-        "id": "b50c2837-b185-4a4c-bc32-d320394b843b",
+        "id": "78734633-3047-4730-9257-00bc67ffa1fd",
         "position": {
-          "x": "-283.0",
-          "y": "19.0"
+          "x": "-275.0",
+          "y": "-5.0"
         },
         "flowTasks": {
-          "success": "e9f29254-56d1-45d7-948b-3666d8fb6424"
+          "success": "711f13bb-60c1-4886-a006-486507d3a476"
         },
         "delayMultiplier": 1.0
       },
@@ -54,13 +59,13 @@
     {
       "name": "NpcCondition",
       "base": {
-        "id": "e9f29254-56d1-45d7-948b-3666d8fb6424",
+        "id": "4d077c91-0482-4656-b2dd-d9e265f3da1a",
         "position": {
-          "x": "-36.0",
-          "y": "360.0"
+          "x": "247.0",
+          "y": "341.0"
         },
         "flowTasks": {
-          "success": "5aad6093-b9a8-4810-96c4-12e838e72d36"
+          "success": "79141022-ccd1-4dc0-8def-2c4c28e6f315"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -85,13 +90,13 @@
     {
       "name": "InventoryCondition",
       "base": {
-        "id": "644f6d60-521f-48b4-b553-809ad6220a1d",
+        "id": "376e9ddf-1f6c-4720-9579-ad44433be52d",
         "position": {
-          "x": "794.0",
-          "y": "153.0"
+          "x": "1077.0",
+          "y": "134.0"
         },
         "flowTasks": {
-          "success": "bc25b34a-98ce-4b12-94a2-9a6891abfe42"
+          "success": "1107e821-b6ff-4bf4-aaa7-8a22dcd4c35a"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -112,10 +117,10 @@
     {
       "name": "SpecialInteractionAction",
       "base": {
-        "id": "2bc27c12-50d7-4708-bc6d-e5d2587c6f95",
+        "id": "20ae577b-b0b8-4dd0-befb-ab1c4d43c661",
         "position": {
-          "x": "1747.0",
-          "y": "-12.0"
+          "x": "2030.0",
+          "y": "-31.0"
         },
         "flowTasks": {},
         "delayMultiplier": 1.0,
@@ -142,14 +147,14 @@
     {
       "name": "PlayerCondition",
       "base": {
-        "id": "5aad6093-b9a8-4810-96c4-12e838e72d36",
+        "id": "79141022-ccd1-4dc0-8def-2c4c28e6f315",
         "position": {
-          "x": "375.0",
-          "y": "387.0"
+          "x": "658.0",
+          "y": "368.0"
         },
         "flowTasks": {
-          "success": "644f6d60-521f-48b4-b553-809ad6220a1d",
-          "failure": "97a4ec1c-ca4b-45df-8c63-19a62e47e9ff"
+          "success": "376e9ddf-1f6c-4720-9579-ad44433be52d",
+          "failure": "57408fb7-f547-4791-a805-00977a18354e"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -170,13 +175,13 @@
     {
       "name": "InventoryCondition",
       "base": {
-        "id": "97a4ec1c-ca4b-45df-8c63-19a62e47e9ff",
+        "id": "57408fb7-f547-4791-a805-00977a18354e",
         "position": {
-          "x": "763.0",
-          "y": "603.0"
+          "x": "1046.0",
+          "y": "584.0"
         },
         "flowTasks": {
-          "success": "6d9e044d-24dc-4ab3-a25c-94a8a3ea1663"
+          "success": "979ba19d-d6b2-428b-aa63-b270d72881eb"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -197,10 +202,10 @@
     {
       "name": "SpecialInteractionAction",
       "base": {
-        "id": "6d9e044d-24dc-4ab3-a25c-94a8a3ea1663",
+        "id": "979ba19d-d6b2-428b-aa63-b270d72881eb",
         "position": {
-          "x": "1302.0",
-          "y": "696.0"
+          "x": "1585.0",
+          "y": "677.0"
         },
         "flowTasks": {},
         "delayMultiplier": 1.0,
@@ -229,14 +234,14 @@
     {
       "name": "SkillCondition",
       "base": {
-        "id": "bc25b34a-98ce-4b12-94a2-9a6891abfe42",
+        "id": "1107e821-b6ff-4bf4-aaa7-8a22dcd4c35a",
         "position": {
-          "x": "1234.0",
-          "y": "98.0"
+          "x": "1517.0",
+          "y": "79.0"
         },
         "flowTasks": {
-          "success": "2bc27c12-50d7-4708-bc6d-e5d2587c6f95",
-          "failure": "1dec38cb-d4f1-44fb-9fc2-6f8b8dff7130"
+          "success": "20ae577b-b0b8-4dd0-befb-ab1c4d43c661",
+          "failure": "13fbb769-eecc-4458-a046-f68565947cc6"
         },
         "delayMultiplier": 1.0
       },
@@ -249,10 +254,10 @@
     {
       "name": "SpecialInteractionAction",
       "base": {
-        "id": "1dec38cb-d4f1-44fb-9fc2-6f8b8dff7130",
+        "id": "13fbb769-eecc-4458-a046-f68565947cc6",
         "position": {
-          "x": "1724.0",
-          "y": "411.0"
+          "x": "2007.0",
+          "y": "392.0"
         },
         "flowTasks": {},
         "delayMultiplier": 1.0,
@@ -279,11 +284,15 @@
     {
       "name": "InventoryCondition",
       "base": {
+        "id": "711f13bb-60c1-4886-a006-486507d3a476",
         "position": {
-          "x": "-266.0",
-          "y": "274.0"
+          "x": "-240.0",
+          "y": "373.0"
         },
-        "flowTasks": {},
+        "flowTasks": {
+          "success": "4d077c91-0482-4656-b2dd-d9e265f3da1a",
+          "failure": "e27d2a27-ad34-42b1-9b8f-754fba6ead2e"
+        },
         "delayMultiplier": 1.0,
         "queryData": {
           "bool0": false,
@@ -293,53 +302,24 @@
         }
       },
       "variables": {
-        "ItemValues": [],
+        "ItemValues": [
+          "Soul rune",
+          "Nature rune"
+        ],
         "ItemRegex": false,
-        "Condition": ""
+        "Condition": "Contains all of:"
       }
     },
     {
-      "name": "InventoryCondition",
+      "name": "StopAction",
       "base": {
+        "id": "e27d2a27-ad34-42b1-9b8f-754fba6ead2e",
         "position": {
-          "x": "-348.0",
-          "y": "279.0"
+          "x": "113.0",
+          "y": "608.0"
         },
         "flowTasks": {},
-        "delayMultiplier": 1.0,
-        "queryData": {
-          "bool0": false,
-          "bool1": false,
-          "bool2": false,
-          "type": "InventoryQuery"
-        }
-      },
-      "variables": {
-        "ItemValues": [],
-        "ItemRegex": false,
-        "Condition": ""
-      }
-    },
-    {
-      "name": "InventoryCondition",
-      "base": {
-        "position": {
-          "x": "-448.0",
-          "y": "358.0"
-        },
-        "flowTasks": {},
-        "delayMultiplier": 1.0,
-        "queryData": {
-          "bool0": false,
-          "bool1": false,
-          "bool2": false,
-          "type": "InventoryQuery"
-        }
-      },
-      "variables": {
-        "ItemValues": [],
-        "ItemRegex": false,
-        "Condition": ""
+        "delayMultiplier": 1.0
       }
     }
   ],
